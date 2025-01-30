@@ -41,7 +41,7 @@ const paintTodos = () => {
         delBtnElem.classList.add('delBtn');
         delBtnElem.innerHTML = 'X';
 
-        if(todo.isCompleted) {
+        if(todo.isChecked) {
             todoItemElem.classList.add('checked');
             checkboxElem.innerText = '✔';
         }
