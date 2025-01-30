@@ -21,7 +21,7 @@ const appendTodos = (text) => {
 }
 
 const paintTodos = () => {
-    todoListElem.innerHTML = ''; //todoListElem 요소 안의 HTML 초기화
+    todoListElem.innerHTML = null; //todoListElem 요소 안의 HTML 초기화
 	const allTodos = getAllTodos() // todos 배열 가져오기
 
     allTodos.forEach(todo => {
@@ -57,7 +57,7 @@ const paintTodos = () => {
 const init = () => {
     todoInputElem.addEventListener('keypress', (e) =>{
         if( e.key === 'Enter' ){
-            appendTodos(e.target.value); todoInputElem.value ='';
+            appendTodos(e.target.value); todoInputElem.value =null;
         }
     })
 }
