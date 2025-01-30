@@ -61,7 +61,7 @@ todoListElem.appendChild(todoItemElem);
 const init = () => {
     todoInputElem.addEventListener('keypress', (e)=>{
         if( e.key === 'Enter' ){
-            appendTodos(e.target.value); todoInputElem.value ="";
+            appendTodos(e.target.value); todoInputElem.value ='';
         }
     })
 }
