@@ -23,7 +23,7 @@ const appendTodos = (text) => {
 }
 
 const paintTodos =() => {
-todoListElem.innerHTML =''; //todoListElem 요소안의 HTML 초기화
+todoListElem.innerHTML =""; //todoListElem 요소안의 HTML 초기화
 const allTodos = getAllTodos();//todo 배열 가져오기
 
 //"todo item"에 해당하는 HTML 그려서 "todo list"에 추가하기
@@ -61,7 +61,7 @@ todoListElem.appendChild(todoItemElem);
 const init = () => {
     todoInputElem.addEventListener('keypress', (e)=>{
         if( e.key === 'Enter' ){
-            appendtodos(e.target.value); todoInputElem.value ='';
+            appendTodos(e.target.value); todoInputElem.value ="";
         }
     })
 }
