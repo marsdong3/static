@@ -15,7 +15,7 @@ const getAllTodos = () => {
 
 
 const appendTodos = (text) => {
-    const newld = id++;
+    const newId = id++;
     const newTodos = getAllTodos().concat({id: newId, isComplected: false, content: text})
 // constnewTodos = [...getAlltodos(), {id:newld, is Completed: false, content: text}]
     setTodos(newTodos)
