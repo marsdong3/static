@@ -21,7 +21,7 @@ const appendTodos = (text) => {
 }
 
 const paintTodos = () => {
-    todoListElem.innerHTML = null; //todoListElem 요소 안의 HTML 초기화
+    todoListElem.innerHTML = ''; //todoListElem 요소 안의 HTML 초기화
 	const allTodos = getAllTodos() // todos 배열 가져오기
 
     allTodos.forEach(todo => {
