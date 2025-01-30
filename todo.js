@@ -57,7 +57,7 @@ const paintTodos = () => {
 const init = () => {
     todoInputElem.addEventListener('keypress', (e) =>{
         if( e.key === 'Enter' ){
-            appendTodos(e.target.value); todoInputElem.value =null;
+            appendTodos(e.target.value); todoInputElem.value ='';
         }
     })
 }
